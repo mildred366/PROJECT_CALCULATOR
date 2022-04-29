@@ -2,16 +2,14 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightskyblue;
+    background-color: rgb(80, 182, 245);
 }
-/* .input-container{
-    background-color: black;
-} */
 .container{
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display: grid;
     font-size: 0;
+    justify-content:center;
+    align-content: center;
+
 }
 button{
     background-color: rgb(52, 50, 50);
@@ -22,10 +20,47 @@ button{
 }
 .btn4{
     background-color: rgb(138, 138, 138);
+    flex-direction: row;
 }
 .results{
     background-color: white;
 }
-.div5{
-    
+.btn4{
+    /* vertical-align:baseline; */
+    /* float: left; */
 }
+
+
+
+
+
+/* third option */
+.main-container{
+    /* border: 5px solid red; */
+    display: grid;
+    justify-content:center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    
+  }
+  .main-container > button{
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    background-color: rgb(52, 50, 50);
+  }
+  
+  .display-section{
+    grid-column: 1/-1;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 1rem;
+  }
