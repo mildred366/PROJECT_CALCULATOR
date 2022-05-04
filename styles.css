@@ -2,32 +2,36 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(80, 182, 245);
 }
 .container{
-    display: grid;
+    display: flex;
     font-size: 0;
     justify-content:center;
-    align-content: center;
-
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(64, 175, 244);
+    width: 100%;
+    /* grid-template-rows: minmax(100px, auto) repeat(5, 100px); */
 }
+
 button{
-    background-color: rgb(52, 50, 50);
+    background-color: rgb(46, 43, 43);
     color: whitesmoke;
     border: none;
     width: 70px;
-    padding: 15px;
+    padding: 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .btn4{
-    background-color: rgb(138, 138, 138);
-    flex-direction: row;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.results{
-    background-color: white;
-}
-.btn4{
-    /* vertical-align:baseline; */
-    /* float: left; */
+
+.output-container{
+  
 }
 
 
@@ -35,8 +39,8 @@ button{
 
 
 /* third option */
-.main-container{
-    /* border: 5px solid red; */
+/* .main-container{
+    border: 5px solid red;
     display: grid;
     justify-content:center;
     align-content: center;
@@ -44,15 +48,15 @@ button{
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
     
-  }
+  } */
   .main-container > button{
-    cursor: pointer;
+    
     font-size: 2rem;
     outline: none;
     background-color: rgb(52, 50, 50);
   }
   
-  .display-section{
+  /* .display-section{
     grid-column: 1/-1;
     background-color: white;
     display: flex;
@@ -63,4 +67,4 @@ button{
     word-wrap: break-word;
     word-break: break-all;
     font-size: 1rem;
-  }
+  } */
